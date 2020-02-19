@@ -1,0 +1,141 @@
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background@1X.png");
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+}
+
+.background {
+    margin: 0 auto;
+    height: 768px;
+    width: 1366px;
+}
+
+.heading {
+    padding-top: 49px;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.logo-img {
+    width: 46px;
+    height: 44px;
+    display: inline-block;
+    background-image: url("../img/logo@1X.png");
+}
+
+.logo-text {
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+}
+
+.company-name {
+    font-size: 29pt;
+    font-weight: bold;
+}
+
+.company-name-below {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.logo-link:hover .logo-img {
+    background: url("../img/logo@orangeX.png") no-repeat;
+    width: 46px;
+    height: 44px;
+}
+
+.logo-link:hover .logo-text {
+    color: #f26522;
+}
+
+.company-contact {
+    color: white;
+    font-size: 18pt;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.tours {
+    margin: 0 auto;
+    width: 84%;
+}
+
+.tour-card {
+    width: calc(100% / 3 - 50px);
+    margin-top: 40px;
+    float: left;
+    margin-right: 50px;
+    position: relative;
+}
+
+.tour-img {
+    width: 99%;
+    margin-left: 2px;
+    margin-top: 2px;
+
+}
+
+.tour-bg {
+    width: 100%;
+    background: linear-gradient(to bottom, #E6DADA, #274046);
+}
+
+.tour-name {
+    font-size: 18pt;
+    color: white;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.tour-details {
+    position: absolute;
+    width: 100%;
+    background-color: #f26522;
+    visibility: hidden;
+    height: 72px;
+    bottom: 46px;
+}
+
+.white {
+    color: white;
+}
+
+.fa-angle-right {
+    color: wheat;
+    margin-left: 20px;
+}
+
+.tour-card:hover .tour-details {
+    visibility: visible;
+
+}
+
+.from {
+    font-size: 10pt;
+    display: block;
+    padding-top: 16px;
+    margin-bottom: 10px;
+    padding-left: 26px;
+}
+
+.price {
+    font-size: 17pt;
+    padding-left: 10px;
+
+}
+
+.view-details {
+    font-size: 14pt;
+    margin-left: 100px;
+}
+.ftr-text{
+    font-size: 11pt;
+    color: white;
+    text-align: center;
+    margin-top:50px;
+margin-bottom: 15px;
+}
