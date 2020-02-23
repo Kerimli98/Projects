@@ -1,0 +1,139 @@
+@import 'fonts.css';
+
+table {
+    font-family: 'Arimo', sans-serif;
+    width: 1192px;
+    height: 736px;
+    border: 20px solid #3a4965;
+}
+
+th, td {
+    text-align: center;
+    padding: 22px;
+    border: 1px solid #d4d4d4;
+}
+
+td {
+    color: rgba(72, 72, 72, 255);
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #e3e3e3;
+}
+
+.first-h {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.first-heading {
+    color: rgba(72, 72, 72, 255);
+    background-color: #fafafa;
+    vertical-align: middle;
+}
+
+.pricing {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.green {
+    border-color: #89c331;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 255);
+    background-color: #89c331;
+    font-size: 24px;
+
+}
+
+.red {
+    border-color: #f04a56;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #f04a56;
+    color: white;
+}
+
+.xaki {
+    border-color: #20807c;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #20807c;
+    color: white;
+}
+
+.white {
+    background-color: #fafafa;
+    color: rgba(72, 72, 72, 255);
+
+}
+
+.big-num {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.cent {
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.per-month {
+    font-size: 18px;
+    display: block;
+
+}
+
+.sup {
+    display: inline-block;
+    text-align: left;
+}
+
+.icons {
+    color: #848484;
+    margin-right: 10px;
+}
+
+.gray {
+    box-shadow: 0px 6px 0px #404040;
+    background-color: #484848;
+}
+.gray:hover{
+    background-color:#404040;
+}
+.green-btn {
+    background-color: #89c331;
+    box-shadow: 0px 6px 0px #79b027;
+}
+.green-btn:hover{
+    background-color: #79b027;
+}
+
+.red-btn {
+    background-color: #f04a56;
+    box-shadow: 0px 6px 0px #df3a46;
+}
+.red-btn:hover{
+    background-color:#df3a46;
+}
+
+.xaki-btn {
+    background-color: #20807c;
+    box-shadow: 0px 6px 0px #16736f;
+}
+.xaki-btn:hover{
+    background-color:#16736f ;
+}
+.btn {
+    border: none;
+    border-radius: 6px;
+    width: 192px;
+    height: 49px;
+    color: white;
+}
