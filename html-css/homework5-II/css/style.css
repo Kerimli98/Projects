@@ -1,0 +1,126 @@
+@import "fonts.css";
+
+table {
+    font-family: 'Arimo', sans-serif;
+    width: 1197px;
+    height: 660px;
+    border: 20px solid #3a4965;
+}
+
+ td,th {
+    text-align: center;
+     padding: 31px;
+     border: 1px solid #d4d4d4;
+
+}
+td {
+    color: rgba(72, 72, 72, 255);
+}
+
+td:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+td:nth-child(even) {
+    background-color: #e3e3e3;
+}
+
+.first-h {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.first-heading {
+    color: rgba(72, 72, 72, 255);
+    background-color: #fafafa;
+    vertical-align: middle;
+}
+
+.pricing {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.green {
+    border-color: #89c331;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 255);
+    background-color: #89c331;
+    font-size: 24px;
+
+}
+
+.red {
+    border-color: #f04a56;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #f04a56;
+    color: white;
+}
+
+.xaki {
+    border-color: #20807c;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #20807c;
+    color: white;
+}
+
+.white {
+    background-color: #fafafa;
+    color: rgba(72, 72, 72, 255);
+
+}
+
+.big-num {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cent {
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.per-month {
+    display: inline-block;
+    font-size: 14px;
+}
+.sup{
+    margin-top: 8px;
+    display: inline-block;
+}
+.icons {
+    display: block;
+    color: #848484;
+    margin-bottom: 10px;
+}
+
+.gray {
+    box-shadow: 0px 6px 0px #404040;
+    background-color: #484848;
+}
+
+.gray:hover {
+    background-color: #404040;
+}
+
+.btn {
+    font-size: 17px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 144px;
+    height: 41px;
+    color: white;
+}
+.valign{
+    vertical-align: middle;
+}
+.boold{
+    font-size: 19px;
+    color: rgba(72, 72, 72, 255);
+    font-weight: bold;
+}
