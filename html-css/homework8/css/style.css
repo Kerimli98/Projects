@@ -1,0 +1,297 @@
+.bg-1 {
+    background-image: url("../img/bg1.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    height: 70vh;
+}
+
+.navbar-container {
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.only-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-name {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 32px;
+    color: rgba(66, 79, 87, 255);
+}
+
+.blue {
+    color: #14afca;
+    font-weight: bold;
+}
+
+.item-link {
+    font-size: 15px;
+    color: #3e4c4e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-right: 45px;
+}
+
+.item-link-blue {
+    font-size: 15px;
+    color: #14afca;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-right: 45px;
+}
+
+.bg-1-text {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-text {
+    font-size: 50px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.what-section {
+    height: 55vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-WHAT {
+    color: #14afca;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.text-below-header {
+    margin-top: 10px;
+    color: rgba(66, 79, 87, 255);
+    font-weight: bold;
+}
+
+.what-content {
+    width: 70%;
+    color: rgba(66, 79, 87, 255);
+    margin-top: 25px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.companies-section {
+    background-image: url("../img/bg2.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.companies-header {
+    color: #14afca;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.opacity-2 {
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-below-header-2 {
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.logos {
+
+}
+
+.flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.adobe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 212px;
+    height: 90px;
+}
+
+.adobe-name {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo-itself {
+    margin-right: 65px;
+}
+
+.meet-us-section {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.meet-header {
+    color: #14afca;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.text-below-header-3 {
+    margin-top: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.persons {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-text {
+    text-align: center;
+    color: rgba(66, 79, 87, 255);
+    font-size: 15px;
+    margin-top: 15px;
+    width: 270px;
+    line-height: 1.5;
+}
+
+.person1, .person2 {
+    margin-right: 84px;
+}
+
+.testimonials-section {
+    background-image: url("../img/bg3.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.opacity3 {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testi-header {
+    color: #14afca;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.quote {
+    width: 877px;
+    text-align: center;
+    font-style: italic;
+    color: rgba(211, 204, 204, 255);
+    margin-top: 45px;
+    line-height: 1.7;
+}
+
+.author {
+    margin-left: 515px;
+    margin-top: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+.why-section {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.why-header {
+    color: #14afca;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.why-content {
+    margin-top: 45px;
+}
+
+.why-content-text {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(66, 79, 87, 255);
+}
+
+.copy-right {
+    margin-top: 85px;
+    text-align: center;
+    color: rgba(61, 60, 60, 255);
+    font-size: 14px;
+}
+
+.copy-right2 {
+    margin-top: 7px;
+}
+
+.bold {
+    font-weight: bold;
+}
