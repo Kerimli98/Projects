@@ -1,0 +1,169 @@
+/*.fuck-off {*/
+/*    border: none;*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    border-radius: 55%;*/
+/*    padding: 40px;*/
+/*    font-size: 24px;*/
+/*    position: relative;*/
+/*    left: 10px;*/
+/*    animation: fuck 12s infinite alternate ease-in;*/
+/*}*/
+
+/*.fuck-off:hover {*/
+/*    background-color: darkslategrey;*/
+/*    color: antiquewhite;*/
+/*    left: 40px;*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+/*@keyframes fuck {*/
+/*    from {*/
+/*        top: 40px;*/
+/*    }*/
+/*    25% {*/
+/*        left: 1335px;*/
+/*    }*/
+/*    50% {*/
+/*        left: 0;*/
+/*    }*/
+/*    75% {*/
+/*        left: 1335px;*/
+/*    }*/
+/*    100% {*/
+/*        left: 0;*/
+/*    }*/
+/*    to {*/
+/*        top: 700px;*/
+/*    }*/
+/*}*/
+
+body {
+    background-color: pink;
+}
+
+.packman {
+    display: inline-flex;
+    flex-direction: column;
+    animation: Move 10s infinite ease;
+}
+
+.packman-top {
+    position: relative;
+    background-color: coral;
+    width: 150px;
+    height: 75px;
+    transform: rotate(-45deg);
+    transform-origin: bottom center;
+    border-radius: 150px 150px 0 0;
+    animation: top-eat 0.5s alternate infinite ease-in-out;
+}
+
+.packman-top::before {
+    content: '';
+    border: 7px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+}
+
+.packman-bot {
+    background-color: coral;
+    width: 150px;
+    height: 75px;
+    border-radius: 0 0 150px 150px;
+    display: inline-block;
+    transform: rotate(45deg);
+    transform-origin: top center;
+    animation: bottom-eat 0.5s alternate infinite ease-in-out;
+}
+
+@keyframes top-eat {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes bottom-eat {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes Move {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    24% {
+        transform: translate(600px, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(600px, 0) rotate(90deg);
+    }
+    49% {
+        transform: translate(600px, 600px) rotate(90deg);
+    }
+    50% {
+        transform: translate(600px, 600px) rotate(180deg);
+    }
+    74% {
+        transform: translate(0, 600px) rotate(180deg);
+    }
+    75% {
+        transform: translate(0, 600px) rotate(270deg);
+    }
+    99% {
+        transform: translate(0, 0) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+.food {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: whitesmoke;
+    border-radius: 50%;
+    top: 45%;
+    left: 140px;
+    animation-name: food;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}
+
+.food2 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: whitesmoke;
+    border-radius: 50%;
+    top: 45%;
+    left: 100px;
+    animation-name: food;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes food {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+
