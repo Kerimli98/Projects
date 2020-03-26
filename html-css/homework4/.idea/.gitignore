@@ -1,2 +1,8 @@
 # Default ignored files
 /workspace.xml
+/.idea/**/*
+*.xml
+*.iml
+*/node_modules/**/*
+**/*/package-lock.json
+**/*/dist/**/*
