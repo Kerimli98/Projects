@@ -63,6 +63,16 @@
 //     }
 // }
 // Check(12, 2, 3);
+// function check(...args){
+//     if(args.length!==3){
+//         console.log(`Function called with ${args.length} arguments :(`);
+//     }
+//     else{
+//         console.log(`Function called with ${args.length} arguments :)`);
+//     }
+// }
+// check(1,4,5,7,8,5,6);
+// check(1,5,6);
 
 
 /* TASK - 5
@@ -99,74 +109,104 @@
 *
 * Sizes and stuffings are written in constants:*/
 
-const SIZE_SMALL = {
-    name: 'SIZE_SMALL',
-    price: 15,
-    cal: 250
-};
+// const SIZE_SMALL = {
+//     name: 'SIZE_SMALL',
+//     price: 15,
+//     cal: 250
+// };
+//
+// const SIZE_LARGE = {
+//     name: 'SIZE_LARGE',
+//     price: 25,
+//     cal: 340
+// };
+//
+// const STUFFING_CHEESE = {
+//     name: 'STUFFING_CHEESE',
+//     price: 4,
+//     cal: 25
+// };
+//
+// const STUFFING_SALAD = {
+//     name: 'STUFFING_SALAD',
+//     price: 5,
+//     cal: 5
+// };
+//
+// const STUFFING_BEEF = {
+//     name: 'STUFFING_BEEF',
+//     price: 10,
+//     cal: 50
+// };
+//
+// function getPrice(size, stuffing) {
+//     size = prompt("How should be your burger size?");
+//     stuffing = prompt("What kind of stuffing would you like?");
+//     let cost = 0;
+//     if (size === 'SIZE_SMALL' && stuffing === 'STUFFING_CHEESE') {
+//         cost = SIZE_SMALL.price + STUFFING_CHEESE.price;
+//     } else if (size === 'SIZE_SMALL' && stuffing === 'STUFFING_SALAD') {
+//         cost = SIZE_SMALL.price + STUFFING_SALAD.price;
+//     } else if (size === 'SIZE_SMALL' && stuffing === 'STUFFING_BEEF') {
+//         cost = SIZE_SMALL.price + STUFFING_BEEF.price;
+//     } else if (size === 'SIZE_LARGE' && stuffing === 'STUFFING_SALAD') {
+//         cost = SIZE_LARGE.price + STUFFING_SALAD.price;
+//     } else if (size === 'SIZE_LARGE' && stuffing === 'STUFFING_BEEF') {
+//         cost = SIZE_LARGE.price + STUFFING_BEEF.price;
+//     } else if (size === 'SIZE_LARGE' && stuffing === 'STUFFING_CHEESE') {
+//         cost = SIZE_LARGE.price + STUFFING_CHEESE.price;
+//     }
+//     return cost;
+// }
+//
+// console.log(getPrice());
 
-const SIZE_LARGE = {
-    name: 'SIZE_LARGE',
-    price: 25,
-    cal: 340
-};
+/* ADVANCED CONDITION - rewrite this code using the Burger constructor function.
+* This function must create a copy of the object that contains all the constants at once
+* And the getPriceAndCalories method, which calculates the caloric value in addition to the cost
+* */
 
-const STUFFING_CHEESE = {
-    name: 'STUFFING_CHEESE',
-    price: 4,
-    cal: 25
-};
+let burger = new Burger('SIZE_SMALL', 'STUFFING_BEEF');
 
-const STUFFING_SALAD = {
-    name: 'STUFFING_SALAD',
-    price: 5,
-    cal: 5
-};
+function Burger(size, stuffing){
+    this.size = size;
+    this.stuffing = stuffing;
 
-const STUFFING_BEEF = {
-    name: 'STUFFING_BEEF',
-    price: 10,
-    cal: 50
-};
+    this.getPrice = function () {
+        this.price = 0;
+        if(this.size==='SIZE_SMALL')
+            this.price+=SIZE_SMALL.price;
+        else if(this.size==='SIZE_LARGE')
+            this.price+=SIZE_LARGE.price;
 
-function getPrice(size, stuffing) {
-    size = prompt("How should be your burger size?");
-    stuffing = prompt("What kind of stuffing would you like?");
-    let cost = 0;
-    if (size === 'SIZE_SMALL' && stuffing === 'STUFFING_CHEESE') {
-        cost = SIZE_SMALL.price + STUFFING_CHEESE.price;
-    } else if (size === 'SIZE_SMALL' && stuffing === 'STUFFING_SALAD') {
-        cost = SIZE_SMALL.price + STUFFING_SALAD.price;
-    } else if (size === 'SIZE_SMALL' && stuffing === 'STUFFING_BEEF') {
-        cost = SIZE_SMALL.price + STUFFING_BEEF.price;
-    } else if (size === 'SIZE_LARGE' && stuffing === 'STUFFING_SALAD') {
-        cost = SIZE_LARGE.price + STUFFING_SALAD.price;
-    } else if (size === 'SIZE_LARGE' && stuffing === 'STUFFING_BEEF') {
-        cost = SIZE_LARGE.price + STUFFING_BEEF.price;
-    } else if (size === 'SIZE_LARGE' && stuffing === 'STUFFING_CHEESE') {
-        cost = SIZE_LARGE.price + STUFFING_CHEESE.price;
-    }
-    return cost;
+        if(this.stuffing==='STUFFING_CHEASE')
+            this.price+=STUFFING_CHEASE.price;
+        else if (this.stuffing==="STUFFING_SALAD")
+            this.price+=STUFFING_SALAD.price
+        else if (this.stuffing==="STUFFING_BEEF")
+            this.price+=STUFFING_BEEF.price;
+        return this.price;
+
+    };
+
+    this.getCal = function () {
+        this.cal = 0;
+        if(this.size==='SIZE_SMALL')
+            this.cal+=SIZE_SMALL.cal;
+        else if(this.size==='SIZE_LARGE')
+            this.cal+=SIZE_LARGE.cal;
+
+        if(this.stuffing==='STUFFING_CHEASE')
+            this.cal+=STUFFING_CHEASE.cal;
+        else if (this.stuffing==="STUFFING_SALAD")
+            this.cal+=STUFFING_SALAD.cal;
+        else if (this.stuffing==="STUFFING_BEEF")
+            this.cal+=STUFFING_BEEF.cal;
+        return this.cal;
+
+    };
 }
 
-console.log(getPrice());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(`Burger price is ${burger.getPrice()} and the total number of calories is ${burger.getCal()}`);
 
 

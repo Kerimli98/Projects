@@ -12,6 +12,12 @@
 // } else
 //     alert("num is odd");
 
+// //qisa yol ternary operator ile
+// let num = parseInt(prompt("Enter integer number"));
+// while (isNaN(num)) {
+//     num = parseInt(prompt("Enter the valid type"));
+// }
+// alert((num % 2===0) ? "even": "odd");
 /* TASK - 2
 * Ask user in witch language he wants to see the list of the days.
 * User can enter only three values, they are - az, en, ru
@@ -44,7 +50,6 @@
 //         break;
 // default:
 //     alert("Wrong selection");}
-
 
 /* TASK - 3
 * Get the access group name from the user, it can be - 'admin', 'manager' or 'user'.

@@ -1,0 +1,45 @@
+.pacmen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: top 0.4s, left 0.4s;
+}
+.pacman-top {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    border-radius: 100px 100px 0 0;
+    background-color: yellow;
+    transform-origin: bottom center;
+    animation: eatTop 0.4s alternate infinite;
+}
+.pacman-bottom {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    border-radius: 0 0 100px 100px;
+    background-color: yellow;
+    transform-origin: top center;
+    animation: eatBottom 0.4s alternate infinite;
+}
+
+@keyframes eatTop {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+@keyframes eatBottom {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}

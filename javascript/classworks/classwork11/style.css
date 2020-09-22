@@ -1,0 +1,44 @@
+/*.gogi {*/
+/*    width: 150px;*/
+/*    padding: 50px;*/
+/*    background-color: tan;*/
+/*}*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.mail-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+.mail-item-from::before {
+    content: 'from: ';
+}
+.mail-item-to::before {
+    content: 'to: ';
+}
+
+.mail-item-text {
+    margin-top: 15px;
+}
+
+.mail-item-delete {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    align-self: flex-end;
+}

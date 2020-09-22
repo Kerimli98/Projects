@@ -25,3 +25,20 @@ else if (age >= 18 && age <= 22) {
 else {
     alert(`Welcome ${name}`);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

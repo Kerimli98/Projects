@@ -16,6 +16,7 @@ if(count==0){
 // another way
 
 // let num = parseInt(prompt("Please enter the number"));
+
 // while(isNaN(num)){
 //     num=prompt("Enter the valid number");
 // }
@@ -27,3 +28,29 @@ if(count==0){
 //         console.log(i);
 //     }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

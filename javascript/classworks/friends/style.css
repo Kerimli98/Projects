@@ -1,0 +1,11 @@
+.square1, .square2, .square3, .square4, .square5, .square6{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: teal;
+    display: inline-block;
+}
+.row{
+    display: block;
+text-align: center;
+}

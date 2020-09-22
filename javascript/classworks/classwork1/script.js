@@ -18,7 +18,8 @@
 * */
 // let variable='123';
 // console.log("it's type:" , typeof(variable));
-
+// variable=parseInt(variable);
+// console.log(typeof variable);
 /* TASK 4
 * Use browser modal windows to show the message "Hello! This is alert"
 * */
@@ -81,7 +82,7 @@
 
 
 /* TASK 3
-* Create 2 variables. Assign true for frirst one, and false for second one.
+* Create 2 variables. Assign true for first one, and false for second one.
 * Execute into console:
 *   - result of comparing 0 and variable with false inside with == operator
 *   - result of comparing 1 and variable with true inside with === operator
@@ -140,9 +141,9 @@
 *   - max number
 *   - min number
 * */
-// let n1=prompt("enter n1");
-// let n2=prompt("enter n2");
-// let n3=prompt("enter n3");
+let n1=prompt("enter n1");
+let n2=prompt("enter n2");
+let n3=prompt("enter n3");
 // console.log((n1+n2+n3)/3);
 // bele etdikde stringleri concat eliyir meselen 1+2+3=123 edir sora 123/3=41
 //ona gore parse int etmek lazimdir
@@ -152,4 +153,12 @@
 // let n3=parseInt(prompt("enter n3"));
 // console.log((n1+n2+n3)/3);
 
+// if(n1>n2 && n1>n3){
+//     console.log(`max number is ${n1}`);
+// }
+// else if(n2>n1 && n2>n3){
+//     console.log(`max number is ${n2}`);
+// }
+// else
+//    console.log(`max number is ${n3}`);
 
