@@ -1,11 +1,8 @@
 let script = document.getElementsByTagName("script");
 let Input = document.getElementById("price");
 let body = document.querySelector("body");
-
-
 Input.addEventListener("focus", function (focus) {
     Input.style.border = "3px solid green";
-
     let removeWarning = document.querySelector(".empty-warning");
     body.removeChild(removeWarning);
 
