@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Banners</title>
+    <style>
+        .image-to-show {
+            width: 400px;
+            height: 400px;
+        }
+
+        .images-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .btn-stop {
+            color: white;
+            background-color: darkred;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .btn-resume {
+            background-color: #3cb878;
+            color: white;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="images-wrapper">
+    <img src="./img/img_1.jpg" alt="image of game" class="image-to-show"/>
+    <img src="./img/img_2.jpg" alt="image of game" class="image-to-show"/>
+    <img src="./img/img_3.JPG" alt="image of game" class="image-to-show"/>
+    <img src="./img/img_4.png" alt="image of game" class="image-to-show"/>
+</div>
+<button class="btn-stop">STOP</button>
+<button class="btn-resume">Resume</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>

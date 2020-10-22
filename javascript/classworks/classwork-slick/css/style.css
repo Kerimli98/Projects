@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+}
+.slick-container {
+    width: 500px;
+    margin: 0 auto;
+}
+.slide-head {
+display:block;
+box-sizing: border-box;
+    width: auto;
+    height: 90px;
+}
+.slick-slide{
+    margin-right: 5px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+
+}
