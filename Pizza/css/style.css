@@ -1,0 +1,536 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #373c3f;
+    height: 4rem;
+    width: 100%;
+}
+
+.navbar-links {
+    display: none;
+}
+
+.navbar-links-burger-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: #fafafa;
+    color: #444444;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+}
+
+.navbar-links-burger-mobile .navbar-item {
+    border-bottom: 0.1rem solid #e9e9e9;
+    padding: 0.8rem 6.5rem 0.8rem 0.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-links-burger-mobile .navbar-item-photo {
+    display: none;
+}
+
+.nav-menu-title {
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-burger {
+    background-color: #202529;
+    padding: 1.4rem 1.1rem 0.8rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.burger-line-1, .burger-line-2, .burger-line-3 {
+    border-top: 3px solid white;
+    width: 1.7rem;
+    height: 0.22rem;
+    margin-bottom: 0.2rem;
+    transition: 0.4s transform;
+}
+
+.change .burger-line-2 {
+    opacity: 0;
+}
+
+.change .burger-line-1 {
+    transform: rotate(-45deg) translate(-4px, 8px);
+}
+
+.change .burger-line-3 {
+
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.header-photo {
+    background-image: url("../img/header-fon@1X.png");
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-position-y: center;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 8.15rem;
+
+}
+
+.header-photo-text {
+    color: white;
+    font-size:1.5rem;
+}
+
+.header-photo-text:first-of-type {
+    margin-bottom: 0.55rem;
+}
+
+.photo-link {
+    margin-top: 10px;
+    display: inline-block;
+    color: rgba(166, 214, 224, 255);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0.12rem;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 2px;
+}
+
+.card-item {
+    flex-basis: 77%;
+    background-size: cover;
+    background-position: bottom right;
+    padding: 1rem 0 1rem 0;
+
+}
+
+.card-item-pizza {
+    background-image: url("../img/Pizza delivery fon@1X.png");
+}
+
+.card-item-ua {
+    background-image: url("../img/UA_UX Salads fon@1X.png");
+}
+
+.card-item-desserts {
+    background-image: url("../img/Desserts fon@1X.png");
+}
+
+.card-item-text {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+.card-arrow {
+    flex-basis: 23%;
+    background-color: #acd8ad;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.content-header {
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    padding-left: 0.8rem;
+    display: flex;
+}
+
+.content-header-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+.content-header-text-first {
+    font-size: 1.05rem;
+    letter-spacing: 0.1rem;
+    color: rgba(63, 64, 67, 255);
+}
+
+.content-header-text-second {
+    font-size: 0.7rem;
+    margin-top: 0.15rem;
+    color: rgba(203, 204, 206, 255);
+}
+
+.content-header-logo {
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-food-header {
+    color: #acd8ad;
+    background-color: #3f4043;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    padding: 1rem 0 1rem 1.4rem;
+    margin-bottom: 1.1rem;
+}
+
+.content-food-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+    margin-top: 1.3rem;
+}
+
+.content-food-subheader-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #3f4043;
+    margin-left: 1.4rem;
+}
+
+.icon-wafel {
+    color: #acd8ad;
+    font-size: 1.8rem;
+    margin-right: 1.2rem;
+}
+
+.glass-icon {
+    color: #acd8ad;
+    font-size: 1.8rem;
+    margin-right: 1.7rem;
+}
+
+.beer-icon {
+    color: #acd8ad;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+}
+
+.coffee-icon {
+    color: #acd8ad;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+}
+
+.menu {
+    padding: 0 1.8rem 0 1.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.menu-item-name {
+    font-size: 0.9rem;
+    color: #3f4043;
+}
+
+.menu-item-price {
+    font-size: 1rem;
+    color: #3f4043;
+    font-weight: bold;
+}
+
+.menu-item-description {
+    font-size: 0.6rem;
+    color: #59595c;
+    margin-bottom: 0.7rem;
+}
+
+.bg-green {
+    background-color: #acd8ad;
+    color: white;
+}
+
+.footer {
+    background-color: #acd8ad;
+}
+
+.footer-logo {
+    display: none;
+}
+
+.ftr-text-container {
+    padding: 1rem;
+}
+
+.ftr-text {
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 410px) and (max-width: 639px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 980px) {
+
+    .navbar {
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        color: white;
+        font-size: 14px;
+        font-family: 'Lato', sans-serif;
+        margin-left: 20px;
+    }
+
+    .nav-menu-title, .nav-burger {
+        display: none;
+    }
+
+    .navbar-item {
+        margin-right: 0.8rem;
+    }
+
+    .navbar-item-photo {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (min-width: 980px) {
+    .navbar {
+        height: 6.5rem;
+    }
+
+    .navbar-links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        color: white;
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        margin-left: 20px;
+    }
+
+    .nav-menu-title, .nav-burger {
+        display: none;
+    }
+
+    .navbar-item {
+        margin-right: 3rem;
+    }
+
+    .navbar-item-photo {
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .header-photo {
+        padding: 6rem 2rem 28rem 3rem;
+        background-image: url("../img/header-fon@1X.png");
+    }
+
+    .header-photo-text {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .photo-link {
+        font-size: 2rem;
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .card-container {
+        display: block;
+        width: calc(100% / 3);
+    }
+
+    .card-item-pizza {
+        background-image: url("../img/Pizza delivery fon@1X.png");
+    }
+
+    .card-item-text {
+        font-size: 3.1rem;
+        padding: 35% 0;
+    }
+
+    .card-item-ua {
+        background-image: url("../img/UA_UX Salads fon@1X.png");
+        background-position: 0 0;
+    }
+
+    .card-item-desserts {
+        flex-basis: 79%;
+        background-image: url("../img/Desserts fon@1X.png");
+    }
+
+    .card-arrow {
+        display: none;
+    }
+
+    .content-header {
+        padding-left: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.1rem;
+    }
+
+    .content-header-text-first {
+        font-size: 3rem;
+    }
+
+    .content-header-text-second {
+        font-size: 1.7rem;
+    }
+
+    .content-header-logo {
+        display: block;
+        margin-right: 3rem;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+
+    .content-food {
+        width: calc(100% / 2);
+    }
+
+    .content-food-header {
+        font-size: 2.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    .content-food-subheader {
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .content-food-subheader-text {
+        font-size: 1.8rem;
+    }
+
+    .icon-wafel {
+        font-size: 4.2rem;
+    }
+
+    .glass-icon {
+        font-size: 4.2rem;
+    }
+
+    .beer-icon {
+        font-size: 4.2rem;
+    }
+
+    .coffee-icon {
+        font-size: 4.2rem;
+    }
+
+    .menu-item {
+        margin-bottom: 1.8rem;
+    }
+
+    .menu-item-name {
+        font-size: 2.1rem;
+    }
+
+    .menu-item-price {
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .menu-item-description {
+        font-size: 1.5rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6.4rem;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 0.7rem 0 0.7rem 3rem;
+    }
+
+    .ftr-text-container {
+        padding: 0;
+        margin-right: 3rem;
+    }
+
+    .ftr-text {
+        display: inline-block;
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

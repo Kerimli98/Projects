@@ -415,7 +415,8 @@ body {
     width: 284px;
     height: 206px;
     position: absolute;
-    top: 0;
+    top:-12px;
+    left:-7px;
     background-color: #f8fcfe;
     display: flex;
     justify-content: center;

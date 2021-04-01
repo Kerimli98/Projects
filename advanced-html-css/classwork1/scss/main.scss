@@ -1,0 +1,27 @@
+$var : 10px;
+@mixin flexContainer($jc: center, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+.green-square {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+.tabs {
+  @include flexContainer();
+  margin-left: $var;
+
+  &__item {
+    @extend .green-square;
+    color: teal;
+    background-color: royalblue;
+    &--active {
+      background-color: tomato;
+    }
+  }
+}
+

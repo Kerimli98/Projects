@@ -178,22 +178,22 @@
 * After every second click on menu button OR on anywhere outside of list - turn menu button into initial state and hide the list.
 * */
 
-// const $cont=$('.container');
-//
-// $cont.on('click', (evt) => {
-//     $cont.toggleClass("change");
-// });
-//
-// $cont.on('click',()=>{
-//     const $links = $("#myLinks");
-//     if($links.css('display')==='block'){
-//         $links.css('display','none');
-//     }
-//     else{
-//         $links.css("display","block");
-//     }
-//
-// });
+const $cont=$('.container');
+
+$cont.on('click', (evt) => {
+    $cont.toggleClass("change");
+});
+
+$cont.on('click',()=>{
+    const $links = $("#myLinks");
+    if($links.css('display')==='block'){
+        $links.css('display','none');
+    }
+    else{
+        $links.css("display","block");
+    }
+
+});
 
 /* TASK - 3
 * Add "to top" button, that will smoothly scroll the page up to the beginning of the page.
